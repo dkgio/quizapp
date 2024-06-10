@@ -328,4 +328,8 @@ main {
     .alternativas button {
         font-size: 22px;
     }
+    
+    main button {
+        font-size: 22px;
+    }
 }
