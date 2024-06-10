@@ -18,6 +18,8 @@
     --bg-javascript: #ebf0ff;
     --bg-acessibilidade: #f6e7ff;
     --white: #fff;
+    --green: #26d782;
+    --red: #ee5454;
     --bg-mobile: url(../../assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-light.svg);
 }
@@ -50,7 +52,6 @@ header {
     align-items: center;
     gap: 16px;
 }
-
 
 .assunto_icone {
     background: var(--bg-acessibilidade);
@@ -153,9 +154,13 @@ main {
     
 }
 
-
 .alternativas label:has(input:checked) {
-    
+    outline: 3px solid var(--purple);
+
+    & span {
+        background: var(--purple);
+        color: var(--white);
+    }
 }
 
 .alternativas input {
@@ -188,7 +193,6 @@ main {
     background: var(--purple);
     color: var(--white);
     width: 100%;
-
     font-size: 18px;
     font-weight: 500;
 }
